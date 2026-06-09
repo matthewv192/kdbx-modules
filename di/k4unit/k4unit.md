@@ -19,7 +19,7 @@ q)k4unit.moduletest`di.tz
 
 As part of the test cases it requires the "before" test to module load the module with the same naming convention used for the tests, in this case "tz":
 ``` 
-before,0,0,q,timezone:use`di.tz,1,,Initialize module
+before,0,0,q,tz:use`di.tz,1,,Initialize module
 true,0,0,q,2025.07.22D14:19:48.386221575=tz.localtogmt[`$"America/New_York";2025.07.22D10:19:48.386221575],1,,Test local to gmt 1
 ```
 
