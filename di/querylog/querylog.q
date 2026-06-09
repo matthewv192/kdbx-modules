@@ -126,7 +126,7 @@ logquery:{[zcmd;handler;arg]
   :logafter[id;zcmd;currenttime localtime;@[handler;arg;logerror[id;zcmd;currenttime localtime;arg;start;]];arg;start:currenttime localtime];
   };
 
-/ log before and after query execution is attempted, filtering with .usage.ignoreList
+/ log before and after query execution is attempted, filtering with .querylog.ignorelist
 logqueryfiltered:{[zcmd;handler;arg]
   if[ignore;
     if[0h=type arg;
