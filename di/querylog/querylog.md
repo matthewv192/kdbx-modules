@@ -46,7 +46,7 @@ by providing a dictionary of the variable name and desired value (default values
 ```q
 localtime    : 1b                   // Log using local time or UTC (default: 1b, local)
 logdir       : "/path/to/logs";     // Path to log directory
-logname      : "rdb";               // Identifier used in log file name: usage_{logname}_{timestamp}.log
+logname      : "rdb";               // Identifier used in log file name: querylog_{logname}_{timestamp}.log
 logtimestamp : {.z.Z};              // Function to give log name timestamp suffix (default: {[] :.z.D;})
 logtodisk    : 1b;                  // Log to disk (default: 0b)
 logtomemory  : 1b;                  // Log to memory table (default: 1b)
